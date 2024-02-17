@@ -1,4 +1,5 @@
 {
-    "ram_amount": "4",
+    "ram_gb": "4",
+    "server_dir": "server",
     "server_jar": "server.jar"
 }

@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f822945e-61a3-4ccd-b429-113801ba786f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ManagerMain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ManagerSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ServerProperties.py" afterDir="false" />
+    <list default="true" id="b7ecba6c-25d4-4b4b-bc8d-8cde8712f1f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ServerManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/banned-ips.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/banned-players.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/bukkit.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/cache/mojang_1.20.4.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/cache/spark.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/commands.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/paper-global.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config/paper-world-defaults.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/eula.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/help.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/libraries/com/github/carleslc/Simple-YAML/Simple-Configuration/1.8.4/Simple-Configuration-1.8.4.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/libraries/com/github/carleslc/Simple-YAML/Simple-Yaml/1.8.4/Simple-Yaml-1.8.4.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/libraries/com/github/oshi/oshi-core/6.4.5/oshi-core-6.4.5.jar" afterDir="false" />
@@ -110,37 +120,76 @@
       <change afterPath="$PROJECT_DIR$/server/libraries/org/spongepowered/configurate-yaml/4.2.0-SNAPSHOT/configurate-yaml-4.2.0-SNAPSHOT.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/libraries/org/xerial/sqlite-jdbc/3.42.0.1/sqlite-jdbc-3.42.0.1.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/libraries/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/logs/2024-02-17-1.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/logs/2024-02-17-2.log.gz" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/logs/latest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/ops.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/permissions.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/bStats/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/plugins/spark/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pufferfish.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/purpur.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/server.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/server.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/spigot.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/usercache.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/version_history.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/versions/1.20.4/purpur-1.20.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinecraftColorCodeParser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinecraftServerHandler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinecraftServerManagerMain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/whitelist.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/data/raids.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/data/random_sequences.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/datapacks/bukkit/pack.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.-1.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.-2.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/entities/r.-2.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/paper-world.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/region/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/region/r.-1.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/region/r.-2.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/region/r.-2.1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world/uid.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/data/raids.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/entities/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/DIM-1/region/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/paper-world.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_nether/uid.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/data/raids_end.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/entities/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/level.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/level.dat_old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/paper-world.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/world_the_end/uid.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/ServerManager.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2cRe3vXuEnFVEVYVqy01xsAqONW" />
+  <component name="ProjectId" id="2cUUYW38B5L6X8V4l3f1PL5WKft" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -148,23 +197,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.MinecraftServerManager.executor": "Run",
-    "Python.PyMinecraftServerManager.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/[[DEV]]/[[GITHUB]]/MinecraftServerManager",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.ServerManager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gebruiker/PycharmProjects/ServerManager/ServerManager.py&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\PycharmProjects\ServerManager\ui" />
+      <recent name="C:\Users\Gebruiker\PycharmProjects\ServerManager" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="MinecraftServerManager" type="PythonConfigurationType" factoryName="Python">
-      <module name="pythonProject" />
+    <configuration name="ServerManager" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ServerManager" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -176,7 +228,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\[[DEV]]\[[GITHUB]]\MinecraftServerManager\ManagerMain.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ServerManager.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,11 +248,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f822945e-61a3-4ccd-b429-113801ba786f" name="Changes" comment="" />
-      <created>1708078626027</created>
+      <changelist id="b7ecba6c-25d4-4b4b-bc8d-8cde8712f1f3" name="Changes" comment="" />
+      <created>1708165699001</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708078626027</updated>
+      <updated>1708165699001</updated>
     </task>
     <servers />
   </component>

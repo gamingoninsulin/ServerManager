@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>852</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1101</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Online:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="Button_Send_Command">
+       <property name="text">
+        <string>Send Command</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Serves IP Adress: 127.0.0.1:25565</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLineEdit" name="Line_Server_Console_Input"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QTableWidget" name="Table_Server_Console"/>
+     </item>
+     <item row="2" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Button_Start_Server">
+         <property name="text">
+          <string>Start Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Button_Restart_Server">
+         <property name="text">
+          <string>Restart Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Button_StopServer">
+         <property name="text">
+          <string>Stop Server</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Button_Kill_Server">
+         <property name="text">
+          <string>Kill Server</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1126</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGeneral">
+    <property name="title">
+     <string>General</string>
+    </property>
+    <addaction name="actionOpen_config"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_EULA"/>
+   </widget>
+   <widget class="QMenu" name="menuProperties">
+    <property name="title">
+     <string>Properties</string>
+    </property>
+    <addaction name="actionserver_properties"/>
+    <addaction name="actionops_json"/>
+    <addaction name="separator"/>
+    <addaction name="actionbanned_players_json"/>
+    <addaction name="actionbanned_ips_json"/>
+   </widget>
+   <widget class="QMenu" name="menuPlugins">
+    <property name="title">
+     <string>Plugins</string>
+    </property>
+    <addaction name="actionManage"/>
+    <addaction name="actionDownload"/>
+   </widget>
+   <addaction name="menuGeneral"/>
+   <addaction name="menuProperties"/>
+   <addaction name="menuPlugins"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_EULA">
+   <property name="text">
+    <string>Open EULA</string>
+   </property>
+  </action>
+  <action name="actionManage">
+   <property name="text">
+    <string>Manage</string>
+   </property>
+  </action>
+  <action name="actionDownload">
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </action>
+  <action name="actionserver_properties">
+   <property name="text">
+    <string>Server Setings</string>
+   </property>
+  </action>
+  <action name="actionops_json">
+   <property name="text">
+    <string>Operators</string>
+   </property>
+  </action>
+  <action name="actionbanned_players_json">
+   <property name="text">
+    <string>Banned Players</string>
+   </property>
+  </action>
+  <action name="actionbanned_ips_json">
+   <property name="text">
+    <string>Banned IPs</string>
+   </property>
+  </action>
+  <action name="actioncommands_yml">
+   <property name="text">
+    <string>commands.yml</string>
+   </property>
+  </action>
+  <action name="actionOpen_config">
+   <property name="text">
+    <string>Open manager config</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
