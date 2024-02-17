@@ -5,16 +5,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f822945e-61a3-4ccd-b429-113801ba786f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinecraftColorCodeParser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinecraftServerHandler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinecraftServerManagerMain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagerMain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ManagerSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServerProperties.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cache/mojang_1.20.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cache/spark.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/eula.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/github/carleslc/Simple-YAML/Simple-Configuration/1.8.4/Simple-Configuration-1.8.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/github/carleslc/Simple-YAML/Simple-Yaml/1.8.4/Simple-Yaml-1.8.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/github/oshi/oshi-core/6.4.5/oshi-core-6.4.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/lmax/disruptor/3.4.4/disruptor-3.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/mojang/authlib/6.0.52/authlib-6.0.52.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/mojang/brigadier/1.2.9/brigadier-1.2.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/mysql/mysql-connector-j/8.2.0/mysql-connector-j-8.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/com/velocitypowered/velocity-native/3.1.2-SNAPSHOT/velocity-native-3.1.2-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/dev/omega24/upnp4j/1.0/upnp4j-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/leangen/geantyref/geantyref/1.3.15/geantyref-1.3.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-buffer/4.1.97.Final/netty-buffer-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-codec-haproxy/4.1.97.Final/netty-codec-haproxy-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-codec/4.1.97.Final/netty-codec-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-common/4.1.97.Final/netty-common-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-handler/4.1.97.Final/netty-handler-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-resolver/4.1.97.Final/netty-resolver-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-transport-classes-epoll/4.1.97.Final/netty-transport-classes-epoll-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-transport-native-epoll/4.1.97.Final/netty-transport-native-epoll-4.1.97.Final-linux-aarch_64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-transport-native-epoll/4.1.97.Final/netty-transport-native-epoll-4.1.97.Final-linux-x86_64.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-transport-native-unix-common/4.1.97.Final/netty-transport-native-unix-common-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/netty/netty-transport/4.1.97.Final/netty-transport-4.1.97.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/papermc/paper/paper-mojangapi/1.20.4-R0.1-SNAPSHOT/paper-mojangapi-1.20.4-R0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/io/sentry/sentry/5.4.0/sentry-5.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/it/unimi/dsi/fastutil/8.5.12/fastutil-8.5.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/javax/inject/javax.inject/1/javax.inject-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/fabricmc/mapping-io/0.5.0/mapping-io-0.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/java/dev/jna/jna-platform/5.13.0/jna-platform-5.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-api/4.15.0/adventure-api-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-key/4.15.0/adventure-key-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-logger-slf4j/4.15.0/adventure-text-logger-slf4j-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-minimessage/4.15.0/adventure-text-minimessage-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-serializer-ansi/4.15.0/adventure-text-serializer-ansi-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-serializer-gson/4.15.0/adventure-text-serializer-gson-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-serializer-json/4.15.0/adventure-text-serializer-json-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-serializer-legacy/4.15.0/adventure-text-serializer-legacy-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/adventure-text-serializer-plain/4.15.0/adventure-text-serializer-plain-4.15.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/ansi/1.0.3/ansi-1.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/kyori/option/1.0.0/option-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/md-5/bungeecord-chat/1.20-R0.2-deprecated+build.18/bungeecord-chat-1.20-R0.2-deprecated+build.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/minecrell/terminalconsoleappender/1.3.0/terminalconsoleappender-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/logging/log4j/log4j-iostreams/2.19.0/log4j-iostreams-2.19.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-connector-basic/1.9.18/maven-resolver-connector-basic-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-transport-http/1.9.18/maven-resolver-transport-http-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/fusesource/jansi/jansi/2.4.0/jansi-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/jline/jline-terminal-jansi/3.21.0/jline-terminal-jansi-3.21.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/jline/jline-terminal/3.21.0/jline-terminal-3.21.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/mozilla/rhino-engine/1.7.14/rhino-engine-1.7.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/mozilla/rhino-runtime/1.7.14/rhino-runtime-1.7.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/mozilla/rhino/1.7.14/rhino-1.7.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/purpurmc/purpur/purpur-api/1.20.4-R0.1-SNAPSHOT/purpur-api-1.20.4-R0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/slf4j/jcl-over-slf4j/1.7.36/jcl-over-slf4j-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/spongepowered/configurate-core/4.2.0-SNAPSHOT/configurate-core-4.2.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/spongepowered/configurate-yaml/4.2.0-SNAPSHOT/configurate-yaml-4.2.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/xerial/sqlite-jdbc/3.42.0.1/sqlite-jdbc-3.42.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/libraries/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/logs/latest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/versions/1.20.4/purpur-1.20.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinecraftColorCodeParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinecraftServerHandler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinecraftServerManagerMain.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,19 +148,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.MinecraftServerManager.executor&quot;: &quot;Run&quot;,
-    &quot;Python.PyMinecraftServerManager.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gebruiker/PycharmProjects/pythonProject/MinecraftServerManagerMain.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.MinecraftServerManager.executor": "Run",
+    "Python.PyMinecraftServerManager.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/[[DEV]]/[[GITHUB]]/MinecraftServerManager",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MinecraftServerManager" type="PythonConfigurationType" factoryName="Python">
       <module name="pythonProject" />
@@ -69,7 +176,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MinecraftServerManagerMain.py" />
+      <option name="SCRIPT_NAME" value="D:\[[DEV]]\[[GITHUB]]\MinecraftServerManager\ManagerMain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

@@ -1,0 +1,39 @@
+[02:22:33] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[02:22:35] [ServerMain/INFO]: Loaded 1174 recipes
+[02:22:35] [ServerMain/INFO]: Loaded 1271 advancements
+[02:22:35] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[02:22:35] [Server thread/INFO]: Loading properties
+[02:22:35] [Server thread/INFO]: This server is running Purpur version git-Purpur-2138 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 00d3fac on HEAD)
+[02:22:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:22:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:22:36] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[02:22:37] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[02:22:37] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[02:22:37] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
+[02:22:37] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.9, test run: true
+[02:22:37] [Server thread/INFO]: Default game type: SURVIVAL
+[02:22:37] [Server thread/INFO]: Generating keypair
+[02:22:37] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:22:37] [Server thread/INFO]: Using default channel type
+[02:22:37] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[02:22:37] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[02:22:37] [Server thread/INFO]: [spark] Loading server plugin spark v1.10.59
+[02:22:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:22:37] [Server thread/INFO]: Preparing level "world"
+[02:22:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:22:38] [Server thread/INFO]: Time elapsed: 215 ms
+[02:22:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[02:22:38] [Server thread/INFO]: Time elapsed: 47 ms
+[02:22:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[02:22:38] [Server thread/INFO]: Time elapsed: 36 ms
+[02:22:38] [Server thread/INFO]: [spark] Enabling spark v1.10.59
+[02:22:39] [Server thread/INFO]: [spark] Using Paper ServerTickStartEvent for tick monitoring
+[02:22:39] [Server thread/INFO]: [spark] Starting background profiler...
+[02:22:39] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows10/amd64), so the built-in Java engine will be used instead.
+[02:22:39] [Server thread/INFO]: Running delayed init tasks
+[02:22:39] [Server thread/INFO]: Done (3.419s)! For help, type "help"
+[02:22:52] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[02:23:03] [Server thread/INFO]: Unknown command. Type "/help" for help.
+[02:23:33] [Server thread/INFO]: Stopping server
+[02:23:33] [Server thread/INFO]: [spark] Disabling spark v1.10.59
+[02:23:33] [Server thread/INFO]: Saving players
