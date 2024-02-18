@@ -62,6 +62,7 @@ class Ui_MainWindow(object):
             MainWindow.setStyleSheet("background-color: lightblue;")
         MainWindow.resize(1126, 852)
 
+        self.process = None
 
         self.actionOpen_EULA = QAction(MainWindow)
         self.actionOpen_EULA.setObjectName(u"actionOpen_EULA")
@@ -197,8 +198,8 @@ class Ui_MainWindow(object):
         self.Server_Console = QTextEdit(self.gridLayoutWidget)
         self.Server_Console.setStyleSheet("background-color: #6ecdeb;")
         self.Server_Console.setObjectName(u"Server_Console")
-        # Add the Server_Console to the grid layout with a column span of 2
-        self.gridLayout.addWidget(self.Server_Console, 2, 0, 1, 2)  # Span 2 columns
+        # Add the input layout to the grid layout with a column span of 2
+        self.gridLayout.addLayout(self.inputLayout, 3, 0, 1, 2)  # Span 2 columns
 
         # Create a QHBoxLayout for the buttons
         self.buttonLayout = QHBoxLayout()
@@ -214,14 +215,17 @@ class Ui_MainWindow(object):
         self.Button_Start_Server.clicked.connect(self.start_server)
 
         self.Button_Restart_Server = QPushButton("Restart Server")
+        self.Button_Restart_Server.clicked.connect(self.restart_server)
         self.Button_Restart_Server.setStyleSheet("background-color: #5daac2;")
         self.buttonLayout.addWidget(self.Button_Restart_Server)
 
         self.Button_StopServer = QPushButton("Stop Server")
+        self.Button_StopServer.clicked.connect(self.stop_server)
         self.Button_StopServer.setStyleSheet("background-color: #5daac2;")
         self.buttonLayout.addWidget(self.Button_StopServer)
 
         self.Button_Kill_Server = QPushButton("Kill Server")
+        self.Button_Kill_Server.clicked.connect(self.kill_server)
         self.Button_Kill_Server.setStyleSheet("background-color: #5daac2;")
         self.buttonLayout.addWidget(self.Button_Kill_Server)
 
@@ -253,6 +257,7 @@ class Ui_MainWindow(object):
 
         self.menuPlugins = QMenu(self.menubar)
         self.menuPlugins.setObjectName(u"menuPlugins")
+
         self.menuPlugins.setStyleSheet("background-color: #41cefa;")
 
         self.menuSchedule = QMenu(self.menubar)
@@ -271,17 +276,13 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuSchedule.menuAction())
 
         self.menuGeneral.addAction(self.actionOpen_config)
-
         self.menuGeneral.addSeparator()
-
         self.menuGeneral.addAction(self.actionOpen_EULA)
         self.menuGeneral.addAction(self.actionSelect_Server_jar)
 
         self.menuProperties.addAction(self.actionserver_properties)
         self.menuProperties.addAction(self.actionops_json)
-
         self.menuProperties.addSeparator()
-
         self.menuProperties.addAction(self.actionbanned_players_json)
         self.menuProperties.addAction(self.actionbanned_ips_json)
 
@@ -297,47 +298,50 @@ class Ui_MainWindow(object):
 
         QMetaObject.connectSlotsByName(MainWindow)
 
-    # setupUi
 
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Minecraft Server Manager", None))
-        self.actionOpen_EULA.setText(QCoreApplication.translate("MainWindow", u"Open EULA", None))
-        self.actionSelect_Server_jar.setText(QCoreApplication.translate("MainWindow", u"Select Server JAR", None))
-        self.actionManage.setText(QCoreApplication.translate("MainWindow", u"Manage", None))
-        self.actionDownload.setText(QCoreApplication.translate("MainWindow", u"Download", None))
+# setupUi
 
-        self.actionScheduleAdd.setText(QCoreApplication.translate("MainWindow", u"Add Schedule", None))
-        self.actionScheduleRemove.setText(QCoreApplication.translate("MainWindow", u"Remove Schedule", None))
-        self.actionScheduleEdit.setText(QCoreApplication.translate("MainWindow", u"Edit Schedule", None))
+def retranslateUi(self, MainWindow):
+    MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Minecraft Server Manager", None))
+    self.actionOpen_EULA.setText(QCoreApplication.translate("MainWindow", u"Open EULA", None))
+    self.actionSelect_Server_jar.setText(QCoreApplication.translate("MainWindow", u"Select Server JAR", None))
+    self.actionManage.setText(QCoreApplication.translate("MainWindow", u"Manage", None))
+    self.actionDownload.setText(QCoreApplication.translate("MainWindow", u"Download", None))
 
-        self.actionserver_properties.setText(QCoreApplication.translate("MainWindow", u"Server Properties", None))
-        self.actionops_json.setText(QCoreApplication.translate("MainWindow", u"Operators", None))
-        self.actionbanned_players_json.setText(QCoreApplication.translate("MainWindow", u"Banned Players", None))
-        self.actionbanned_ips_json.setText(QCoreApplication.translate("MainWindow", u"Banned IPs", None))
-        self.actioncommands_yml.setText(QCoreApplication.translate("MainWindow", u"commands.yml", None))
-        self.actionOpen_config.setText(QCoreApplication.translate("MainWindow", u"Open manager settings", None))
-        self.Label_online.setText(QCoreApplication.translate("MainWindow", u"Online:", None))
-        self.Button_Send_Command.setText(QCoreApplication.translate("MainWindow", u"Send Command", None))
-        self.LabelServerIP.setText(QCoreApplication.translate("MainWindow", u"Serves IP Adress: 127.0.0.1:25565", None))
-        self.LabelLatency.setText(QCoreApplication.translate("MainWindow", u"Serves Latency:", None))
-        self.LabelPing.setText(QCoreApplication.translate("MainWindow", u"Serves Ping:", None))
-        self.Button_Start_Server.setText(QCoreApplication.translate("MainWindow", u"Start Server", None))
-        self.Button_Restart_Server.setText(QCoreApplication.translate("MainWindow", u"Restart Server", None))
-        self.Button_StopServer.setText(QCoreApplication.translate("MainWindow", u"Stop Server", None))
-        self.Button_Kill_Server.setText(QCoreApplication.translate("MainWindow", u"Kill Server", None))
-        self.menuGeneral.setTitle(QCoreApplication.translate("MainWindow", u"General", None))
-        self.menuProperties.setTitle(QCoreApplication.translate("MainWindow", u"Properties", None))
-        self.menuPlugins.setTitle(QCoreApplication.translate("MainWindow", u"Plugins", None))
-        self.menuSchedule.setTitle(QCoreApplication.translate("MainWindow", u"Schedule", None))
+    self.actionScheduleAdd.setText(QCoreApplication.translate("MainWindow", u"Add Schedule", None))
+    self.actionScheduleRemove.setText(QCoreApplication.translate("MainWindow", u"Remove Schedule", None))
+    self.actionScheduleEdit.setText(QCoreApplication.translate("MainWindow", u"Edit Schedule", None))
 
-    # retranslateUi
+    self.actionserver_properties.setText(QCoreApplication.translate("MainWindow", u"Server Properties", None))
+    self.actionops_json.setText(QCoreApplication.translate("MainWindow", u"Operators", None))
+    self.actionbanned_players_json.setText(QCoreApplication.translate("MainWindow", u"Banned Players", None))
+    self.actionbanned_ips_json.setText(QCoreApplication.translate("MainWindow", u"Banned IPs", None))
+    self.actioncommands_yml.setText(QCoreApplication.translate("MainWindow", u"commands.yml", None))
+    self.actionOpen_config.setText(QCoreApplication.translate("MainWindow", u"Open manager settings", None))
+    self.Label_online.setText(QCoreApplication.translate("MainWindow", u"Online:", None))
+    self.Button_Send_Command.setText(QCoreApplication.translate("MainWindow", u"Send Command", None))
+    self.LabelServerIP.setText(QCoreApplication.translate("MainWindow", u"Serves IP Adress: 127.0.0.1:25565", None))
+    self.LabelLatency.setText(QCoreApplication.translate("MainWindow", u"Serves Latency:", None))
+    self.LabelPing.setText(QCoreApplication.translate("MainWindow", u"Serves Ping:", None))
+    self.Button_Start_Server.setText(QCoreApplication.translate("MainWindow", u"Start Server", None))
+    self.Button_Restart_Server.setText(QCoreApplication.translate("MainWindow", u"Restart Server", None))
+    self.Button_StopServer.setText(QCoreApplication.translate("MainWindow", u"Stop Server", None))
+    self.Button_Kill_Server.setText(QCoreApplication.translate("MainWindow", u"Kill Server", None))
+    self.menuGeneral.setTitle(QCoreApplication.translate("MainWindow", u"General", None))
+    self.menuProperties.setTitle(QCoreApplication.translate("MainWindow", u"Properties", None))
+    self.menuPlugins.setTitle(QCoreApplication.translate("MainWindow", u"Plugins", None))
+    self.menuSchedule.setTitle(QCoreApplication.translate("MainWindow", u"Schedule", None))
 
-    def select_server_jar(self):
-        # Open a file dialog for selecting the Minecraft server JAR file
-        file_dialog = QFileDialog()
-        jar_file_path, _ = file_dialog.getOpenFileName(filter="JAR files (*.jar)")
 
-        if jar_file_path:
+# retranslateUi
+
+def select_server_jar(self):
+    # Open a file dialog for selecting the Minecraft server JAR file
+    file_dialog = QFileDialog()
+    jar_file_path, _ = file_dialog.getOpenFileName(filter="JAR files (*.jar)")
+
+    if jar_file_path:
+        if jar_file_path.endswith('.jar'):
             # Check if "ManagerSettings.json" exists
             if os.path.exists("ManagerSettings.json"):
                 with open("ManagerSettings.json", "r") as json_file:
@@ -353,111 +357,166 @@ class Ui_MainWindow(object):
             # Ensure the server directory exists
             os.makedirs(manager_settings["server_dir"], exist_ok=True)
 
-            # Copy and rename the selected JAR file to "server.jar" in the specified directory
-            shutil.copy(jar_file_path, os.path.join(manager_settings["server_dir"], "server.jar"))
+            # Copy the selected JAR file to the specified directory
+            shutil.copy(jar_file_path, os.path.join(manager_settings["server_dir"], manager_settings["server_jar"]))
 
-            # Update "ManagerSettings.json" with the new server JAR file
-            manager_settings["server_jar"] = "server.jar"
+            self.Server_Console.append("SUCCESS: server.jar selected!")
+        else:
+            self.Server_Console.append("Wrong file chosen. Please choose a 'server.jar' file.")
 
-            with open("ManagerSettings.json", "w") as json_file:
-                json.dump(manager_settings, json_file, indent=4)
 
-    def close_editor(self):
-        # Hide the EditFile widget, the SaveButton, and the CloseButton
-        self.EditFile.hide()
-        self.SaveButton.hide()
-        self.CloseButton.hide()
+def start_server(self):
+    # Load existing settings
+    with open("ManagerSettings.json", "r") as json_file:
+        manager_settings = json.load(json_file)
 
-    def start_server(self):
-        # Load existing settings
+    server_dir = manager_settings["server_dir"]
+
+    # Check if the server JAR file exists in the specified directory
+    if not os.path.exists(os.path.join(server_dir, manager_settings["server_jar"])):
+        error_message = f"ERROR: Server jar not found in {server_dir}. Please select server JAR."
+
+        # Add the error message to the Server_Console without line number
+        self.Server_Console.append(error_message)
+        return
+
+    # Start the server
+    command = ["java", "-Xmx" + manager_settings["ram_gb"] + "G", "-jar", manager_settings["server_jar"], "nogui"]
+    self.process = subprocess.Popen(command, cwd=server_dir, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+
+def close_editor(self):
+    # Hide the EditFile widget, the SaveButton, and the CloseButton
+    self.EditFile.hide()
+    self.SaveButton.hide()
+    self.CloseButton.hide()
+
+
+def is_server_running(self):
+    # Check if the server process is running
+    return self.process is not None and self.process.poll() is None
+
+
+def start_server(self):
+    # Load existing settings
+    with open("ManagerSettings.json", "r") as json_file:
+        manager_settings = json.load(json_file)
+
+    server_dir = manager_settings["server_dir"]
+
+    # Check if "server.jar" exists in the specified directory
+    if not os.path.exists(os.path.join(server_dir, 'server.jar')):
+        error_message = f"ERROR: Server jar not found in {server_dir}. Please select server JAR."
+
+        # Add the error message to the Server_Console without line number
+        self.Server_Console.append(error_message)
+        return
+
+    # Start the server
+    command = ["java", "-Xmx" + manager_settings["ram_gb"] + "G", "-jar", "server.jar", "nogui"]
+    self.process = subprocess.Popen(command, cwd=server_dir, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
+    # Start a thread to redirect the console output to Server_Console
+    q = Queue()
+    t = Thread(target=enqueue_output, args=(self.process.stdout, q))
+    t.daemon = True
+    t.start()
+
+    # Start a QThread to continuously update Server_Console with the server's output
+    self.output_thread = OutputThread(q)
+    self.output_thread.signal.connect(self.Server_Console.append)
+    self.output_thread.start()
+
+
+def stop_server(self):
+    if not self.is_server_running():
+        self.Server_Console.append("ERROR: Can't stop server, server is not running!")
+        return
+
+    # Send the "stop" command to the server
+    self.process.stdin.write(b'stop\n')
+    self.process.stdin.flush()
+
+
+def restart_server(self):
+    if not self.is_server_running():
+        self.Server_Console.append("ERROR: Server is not running!")
+        return
+
+    # Stop the server
+    self.stop_server()
+
+    # Wait for the server to stop
+    self.process.wait()
+
+    # Start the server
+    self.start_server()
+
+
+def kill_server(self):
+    if not self.is_server_running():
+        self.Server_Console.append("ERROR: Can't kill server, server is not running!")
+        return
+
+    # Kill the server process
+    self.process.kill()
+
+
+def open_eula(self):
+    # Load existing settings
+    try:
         with open("ManagerSettings.json", "r") as json_file:
             manager_settings = json.load(json_file)
+    except FileNotFoundError:
+        self.Server_Console.append("ERROR: ManagerSettings.json not found!")
+        return
 
-        server_dir = manager_settings["server_dir"]
+    server_dir = manager_settings.get("server_dir")
+    if not server_dir:
+        self.Server_Console.append("ERROR: 'server_dir' not found in ManagerSettings.json!")
+        return
 
+    eula_path = os.path.join(server_dir, 'eula.txt')
+
+    try:
+        # Open the EULA file and set the contents to the EditFile widget
+        with open(eula_path, "r") as file:
+            self.EditFile.setText(file.read())
+    except FileNotFoundError:
         # Check if "server.jar" exists in the specified directory
         if not os.path.exists(os.path.join(server_dir, 'server.jar')):
-            error_message = f"ERROR: Server jar not found in {server_dir}. Please select server JAR."
+            error_message = (f"ERROR: file eula.txt not found: Try selecting server JAR first and run the server "
+                             f"once!")
 
             # Add the error message to the Server_Console without line number
             self.Server_Console.append(error_message)
             return
 
-        # Start the server
-        command = ["java", "-Xmx" + manager_settings["ram_gb"] + "G", "-jar", "server.jar", "nogui"]
-        process = subprocess.Popen(command, cwd=server_dir, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    # Show the EditFile widget, the SaveButton, and the CloseButton
+    self.EditFile.show()
+    self.SaveButton.show()
+    self.CloseButton.show()
 
-        # Start a thread to redirect the console output to Server_Console
-        q = Queue()
-        t = Thread(target=enqueue_output, args=(process.stdout, q))
-        t.daemon = True
-        t.start()
 
-        # Start a QThread to continuously update Server_Console with the server's output
-        self.output_thread = OutputThread(q)
-        self.output_thread.signal.connect(self.Server_Console.append)
-        self.output_thread.start()
+def save_file(self):
+    # Load existing settings
+    with open("ManagerSettings.json", "r") as json_file:
+        manager_settings = json.load(json_file)
 
-        # Hide the EditFile widget and the SaveButton
-        self.EditFile.hide()
-        self.SaveButton.hide()
+    server_dir = manager_settings["server_dir"]
+    eula_path = os.path.join(server_dir, 'eula.txt')
 
-    def start_server_threaded(self):
-        # Create a QThreadPool instance
-        self.threadpool = QThreadPool()
+    # Save the contents of the EditFile widget to the EULA file
+    with open(eula_path, "w") as file:
+        file.write(self.EditFile.toPlainText())
+        self.Server_Console.append("SUCCESS: eula.txt is saved!")
 
-        # Create a Worker instance with your start_server method
-        worker = Worker(self.start_server)
-
-        # Start the worker in a separate thread
-        self.threadpool.start(worker)
-
-    def open_eula(self):
-        # Load existing settings
-        with open("ManagerSettings.json", "r") as json_file:
-            manager_settings = json.load(json_file)
-
-        server_dir = manager_settings["server_dir"]
-        eula_path = os.path.join(server_dir, 'eula.txt')
-
-        try:
-            # Open the EULA file and set the contents to the EditFile widget
-            with open(eula_path, "r") as file:
-                self.EditFile.setText(file.read())
-        except FileNotFoundError:
-            # Check if "server.jar" exists in the specified directory
-            if not os.path.exists(os.path.join(server_dir, 'server.jar')):
-                error_message = (f"ERROR: file eula.txt not found: Try selecting server JAR first and run the server "
-                                 f"once!")
-
-                # Add the error message to the Server_Console without line number
-                self.Server_Console.append(error_message)
-                return
-
-        # Show the EditFile widget, the SaveButton, and the CloseButton
-        self.EditFile.show()
-        self.SaveButton.show()
-        self.CloseButton.show()
-
-    def save_file(self):
-        # Load existing settings
-        with open("ManagerSettings.json", "r") as json_file:
-            manager_settings = json.load(json_file)
-
-        server_dir = manager_settings["server_dir"]
-        eula_path = os.path.join(server_dir, 'eula.txt')
-
-        # Save the contents of the EditFile widget to the EULA file
-        with open(eula_path, "w") as file:
-            file.write(self.EditFile.toPlainText())
-            self.Server_Console.append("SUCCESS: eula.txt is saved!")
-
-        # Show the CloseButton
-        self.CloseButton.show()
+    # Show the CloseButton
+    self.CloseButton.show()
 
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)  # Create an instance of QApplication
+    app = QApplication(sys.argv)
     MainWindow = QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
